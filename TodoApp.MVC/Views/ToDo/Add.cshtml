@@ -1,0 +1,24 @@
+﻿@model ToDo
+<form asp-action="Add" asp-controller="ToDo" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"  class="form-label">Yapılacak işin Adı</label>
+        <input asp-for="Name" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Yapılacak işin Açıklaması</label>
+        <input asp-for="Description" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Date" class="form-label">Yapılacak işin Zamanı</label>
+        <input asp-for="Date" type="date" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Yapılacak işin Kategori Id si</label>
+        <input asp-for="CategoryId" type="number" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
